@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="css/w3.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <div id="nav-holder">
+    <nav class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button my-bar my-bar-active">Tyler's Portfolio</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small my-bar">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small my-bar">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small my-bar">Link 3</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium my-bar" style="font-size:22px; padding-top: 3px; padding-bottom: 3px;"
+            onclick="adjustNavbar()">&#9776;</a>
+    </nav>
+    <nav id="collapse-bar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+        <a href="#" class="w3-bar-item w3-button my-bar">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button my-bar">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button my-bar">Link 3</a>
+    </nav>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to my portfolio</h1>
+            <p style="margin: 5px;">Thought provoking second line TBD</p>
+        </div>
+    </div>
+    <!-- Method to achieve fade at top of hero image and shadow at bottom -->
+    <div id="gradient-holder">
+        <div id="floating-gradient"></div>
+        <div id="fake-shadow"></div>
+    </div>
+
+    <!-- About Me Group -->
+    <div class="about-me-group card">
+        <div class="profile">
+            <img id="profile-image" src="images/portrait.jpeg"></img>
+            <div id="profile-details">
+                <h2>Tyler O'Brien</h2>
+                <p><a href="mailto:tylerob65@gmail.com"><i>tylerob65@gmail.com</i></a></p>
+            </div>
+        </div>
+        <div class="about-me-description">
+            <h2 style="font-size:30px">About Me</h2>
+            <p>I’m born and raised in Massachusetts. I graduated from UMass Amherst with a Mechanical Engineering Undergraduate degree,
+            and I’ve been living in the Boston area the past 5 years working as a Quality Engineer at Draper labs.</p>
+            <p>I’m currently enrolled in the Coding Temple bootcamp where I am honing my Web Development skills 
+            in hopes that I'll be able to use them professionally. Check out some of my projects below...</p>
+        </div>
+    </div>
+
+    <!-- Extra Background Card -->
+    <div class="card project-card">
+        <h1>Extra Background</h1>
+        <p>Eventually, when I make this my real portfolio, these cards will be dedicated to different projects. But for now, I’ll
+        use it for extra background info! Here are some things about me...</p>
+        <ul>
+            <li>I live in Cambridge, MA</li>
+            <li>I'm a huge fan of the <span class="tooltip"><i>MCU</i><span class="tooltiptext">Marvel Cinematic Universe</span></span></li>
+            <ul>    
+                <li>My Dad and I see every move opening weekend</li>
+                <li>Most of my news intake is from <a href="https://comicbookmovie.com/news/" target="_blank" class="link">Comic Book Movie</a></li>
+            </ul>
+            <li>I love to traveling, I’ve been to…</li>
+            <ul>
+                <li>Costa Rica</li>
+                <li>Peru</li>
+                <li>Colombia</li>
+                <li>Jamaica</li>
+                <li>Bermuda</li>
+                <li>Hong Kong</li>
+                <li>Japan</li>
+                <li>Israel</li>
+                <li>Spain</li>
+                <li>Iceland</li>
+                <li>England</li>
+                <li><a href="https://youtube.com/shorts/yXpJvh4n_M0?feature=share" target="_blank" class="link">France</a></li>
+                <li>Italy</li>
+                <li>Germany</li>
+                <li>Switzerland</li>
+            </ul>
+            <li>I have three Dachshunds</li>
+            <ul>
+                <li>They live with my parents :(</li>
+                <li>But they are super cute - check <a href="https://www.instagram.com/hirothehotdog/" target="_blank" class="link">the instagram</a> my sister manages for the youngest</li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Fake Project 1 card -->
+    <div class="card project-card">
+        <h1>Project 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus voluptatum odit, dolorum ipsa placeat nobis optio sunt, est doloremque delectus. Recusandae alias ipsum accusamus architecto dolor veniam animi ducimus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus voluptatum odit, dolorum ipsa placeat nobis
+            optio sunt, est doloremque delectus. Recusandae alias ipsum accusamus architecto dolor veniam animi ducimus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus voluptatum odit, dolorum ipsa placeat nobis
+                optio sunt, est doloremque delectus. Recusandae alias ipsum accusamus architecto dolor veniam animi ducimus.</p>
+    </div>
+
+    <!-- Fake Project 2 card -->
+    <div class="card project-card">
+        <h1>Project 2</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus voluptatum odit, dolorum ipsa placeat
+            nobis optio sunt, est doloremque delectus. Recusandae alias ipsum accusamus architecto dolor veniam animi
+            ducimus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus voluptatum odit, dolorum ipsa placeat
+            nobis
+            optio sunt, est doloremque delectus. Recusandae alias ipsum accusamus architecto dolor veniam animi ducimus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus voluptatum odit, dolorum ipsa placeat
+            nobis
+            optio sunt, est doloremque delectus. Recusandae alias ipsum accusamus architecto dolor veniam animi ducimus.</p>
+    </div>
+
+    <!-- Contact Me Section -->
+    <div class="card" id="contact-me">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out with any questions you may have!</p>
+        <form action="mailto:tylerob65@gmail.com" method="POST">
+            <label for="name"><strong>Name</strong></label>
+            <br>
+            <input type="text" id="name" placeholder="Your Name" class="input-text">
+            <br>
+            <label for="body"><strong>Message</strong></label>
+            <br>
+            <textarea id="body" placeholder="Your Message" rows="5" class="input-text"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Tyler O'Brien 2023</p>
+    </footer>
+
+    <!-- Script Section -->
+    <script>
+        // This function is from the w3 school collapsing navbar demo
+        function adjustNavbar() {
+            var x = document.getElementById("collapse-bar");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    
+</body>
+</html>
+
+
